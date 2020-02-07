@@ -5,5 +5,62 @@
     </head>
     <body>
         <h1>Hello World!, We are Software Developers</h1>
+        <form id="survey-form">
+            <p><label for="name" id="name-label">Name:</label></p>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your full name..."
+            />
+            <p><label for="email" id="email-label">Email:</label></p>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email..."
+            />
+            <p><label for="number" id="number-label">Number:</label></p>
+            <input
+              type="number"
+              name="number"
+              id="number"
+              min="0"
+              max="50"
+              placeholder="Input number from 0 - 50"
+            />
+            <p><fieldset>
+              <legend>Selecting elements</legend>
+              <p>
+                <label>Select list</label>
+                <select id="myList">
+                  <option value="1">one</option>
+                  <option value="2">two</option>
+                  <option value="3">three</option>
+                  <option value="4">four</option>
+                </select>
+              </p>
+            </fieldset>
+          </p>
+      
+            <p><fieldset id="group1">
+              <input type="radio" />Male
+              <input type="radio" />Female
+            </fieldset></p>
+      
+          <p>
+            <fieldset>
+              <legend>What is Your Favorite Programming Language?</legend>
+              <input type="checkbox" name="favorite_language" value="Python" />Python<br />
+              <input type="checkbox" name="favorite_language" value="Javascript" />Javascript<br />
+              <input type="checkbox" name="favorite_language" value="Ruby" />Ruby<br />
+              <br />
+            </fieldset>
+          </p>
+            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+          <p>
+            <input type="button" value="Submit" id="submit" /></p>
+          </form>
+      
     </body>
 </html>
